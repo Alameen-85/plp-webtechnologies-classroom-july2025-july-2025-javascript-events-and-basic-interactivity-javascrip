@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page</title>
+    <!-- Correct CSS link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>🌐 My Interactive Web Page</h1>
+
+    <!-- Part 1: Event Handling Example -->
+    <button id="toggleMessageBtn">Click Me!</button>
+    <p id="message" class="hidden">🎉 Hello, you clicked the button!</p>
+
+    <!-- Part 2: Interactive Features -->
+    <section>
+        <h2>Light/Dark Mode Toggle</h2>
+        <button id="themeToggle">Switch Theme</button>
+    </section>
+
+    <section>
+        <h2>Counter Game</h2>
+        <button id="incrementBtn">Increase Count</button>
+        <button id="resetBtn">Reset</button>
+        <p>Count: <span id="counter">0</span></p>
+    </section>
+
+    <!-- Part 3: Form Validation -->
+    <section>
+        <h2>Sign Up Form</h2>
+        <form id="signupForm">
+            <label>Name: <input type="text" id="name"></label>
+            <small class="error" id="nameError"></small><br>
+
+            <label>Email: <input type="email" id="email"></label>
+            <small class="error" id="emailError"></small><br>
+
+            <label>Password: <input type="password" id="password"></label>
+            <small class="error" id="passwordError"></small><br>
+
+            <button type="submit">Submit</button>
+        </form>
+        <p id="formSuccess" class="success"></p>
+    </section>
+
+    <!-- Correct JS link -->
+    <script src="script.js"></script>
+</body>
+
+</html>
